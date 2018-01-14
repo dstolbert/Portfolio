@@ -1,0 +1,106 @@
+/** {*/
+/*	margin: 0;*/
+/*	padding: 0;*/
+/*	box-sizing: border-box;*/
+/*}*/
+
+html {
+	font: normal 16px sans-serif;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+	margin-left: 250px;
+	height: 90vh;
+	width: 80vw;
+}
+
+/*Main Section*/
+
+section .content {
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	flex-grow: 1;
+}
+
+.main div {
+	display: flex;
+	margin-bottom: 0px;
+	width: 1000px;
+	justify-content: center;
+}
+
+/*Header*/
+
+header {
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	margin-top: 0px;
+	flex-grow: 1;
+	color: white;
+}
+
+header nav {
+	margin: 10px 5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header .links {
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+hr {
+	margin: 40px 5vw 0px 5vw;
+	position: fixed;
+	width: 90vw;
+}
+
+/*Project Bar*/
+
+div.projects {
+	position: fixed;
+	margin-top: 40px;
+	height: 90vh;
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+div.projects h2 {
+	flex-grow: 1;
+	margin-top: 5%;
+}
+
+div.projects p {
+	flex-grow: 2;
+}
+
+

@@ -3,3 +3,18 @@ canvas {
 	width: 100%;
 	background-color: black;
 }
+
+body {
+	background-color: black;
+	margin: 0;
+}
+h1 {
+	font: normal 20px sans-serif;
+	margin: -2% 40%;
+    z-index: 1;
+    position: absolute;
+    color: white;
+}
+a {
+	color: white;
+}

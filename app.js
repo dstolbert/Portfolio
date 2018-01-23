@@ -12,6 +12,14 @@ app.get("/patatap", function(req, res){
     res.render("patatap");    
 });
 
+app.get("/color", function(req, res) {
+   res.render("color"); 
+});
+
+app.get("/todo", function(req, res) {
+   res.render("todo"); 
+});
+
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server on!");
 });

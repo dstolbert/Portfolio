@@ -8,6 +8,12 @@ app.get("/", function(req, res){
     res.render("landing");
 });
 
+// Random Projects Routes
+
+app.get("/rest", function(req, res) {
+   res.render("rest"); 
+});
+
 app.get("/patatap", function(req, res){
     res.render("patatap");    
 });
@@ -19,6 +25,16 @@ app.get("/color", function(req, res) {
 app.get("/todo", function(req, res) {
    res.render("todo"); 
 });
+
+// Webpage Routes
+app.get("/blog", function(req, res) {
+   res.render("blog"); 
+});
+
+app.get("/photoblog", function(req, res) {
+   res.render("photoblog"); 
+});
+
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server on!");

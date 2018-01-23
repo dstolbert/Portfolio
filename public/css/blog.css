@@ -1,0 +1,23 @@
+.container {
+	border: 20px solid #bdc3c7;
+	margin: 1% 20% 0 20%;
+	padding: 1% 1% 1% 1%;
+	line-height: 1.1;
+}
+.date {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+h2 {
+	color: #2c3e50;
+	font-weight: 700;
+	margin-bottom: 2%;
+}
+div p:nth-of-type(2) {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 1%;
+}
+a {
+    color: black;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>You need some REST</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<% include partials/header %>
+
+<!--Override bootstrap styles-->
+<style>
+    a {color: black;} 
+    header {margin: 10px;} 
+    a:hover{color:black; text-decoration: none;}
+    header h2{font-weight: bold;}
+</style>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1>RESTful Routes</h1>
+		</div>
+		<table class="table">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">Name</th>
+		      <th scope="col">Path</th>
+		      <th scope="col">HTTP Verb</th>
+		      <th scope="col">Purpose</th>
+		      <th scope="col">Mongoose Method</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<!-- INDEX ROW -->
+		    <tr>
+		      <th scope="row">Index</th>
+		      <td>/dogs</td>
+		      <td>GET</td>
+		      <td>List all dogs</td>
+		      <td>Dog.find()</td>
+		    </tr>
+		    <!-- NEW ROW -->
+		    <tr>
+		      <th scope="row">New</th>
+		      <td>/dogs/new</td>
+		      <td>GET</td>
+		      <td>Show new dog entry form</td>
+		      <td>N/A</td>
+		    </tr>
+		    <!-- CREATE ROW -->
+		    <tr>
+		      <th scope="row">Create</th>
+		      <td>/dogs</td>
+		      <td>POST</td>
+		      <td>Create a new dog, then redirect somewhere</td>
+		      <td>Dog.create()</td>
+		    </tr>
+		    <!-- SHOW ROW -->
+		    <tr>
+		      <th scope="row">Show</th>
+		      <td>/dogs/:id</td>
+		      <td>GET</td>
+		      <td>Show info about one specific dog</td>
+		      <td>Dog.findById()</td>
+		    </tr>
+		    <!-- EDIT ROW -->
+		    <tr>
+		      <th scope="row">Edit</th>
+		      <td>/dogs/:id/edit</td>
+		      <td>GET</td>
+		      <td>Show edit form for one specific dog</td>
+		      <td>Dog.findById()</td>
+		    </tr>
+		    <!-- UPDATE ROW -->
+		    <tr>
+		      <th scope="row">Update</th>
+		      <td>/dogs/:id</td>
+		      <td>PUT</td>
+		      <td>Update particular dog, then redirect somewhere</td>
+		      <td>Dog.findByIdAndUpdate()</td>
+		    </tr>
+		    <!-- DESTROY ROW -->
+		    <tr>
+		      <th scope="row">Destroy</th>
+		      <td>/dogs/:id</td>
+		      <td>DELETE</td>
+		      <td>Delete a particular dog, then redirect somewhere</td>
+		      <td>Dog.findByIdAndRemove()</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+
+<% include partials/footer %>	
+</body>
+</html>

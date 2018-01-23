@@ -1,13 +1,12 @@
 body {
-	position: relative;
-	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 	font-family: 'Roboto', sans-serif;
 	background: #BBD2C5;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	padding-bottom: 20vh;
 }
-
 h1 {
 	background-color: #2980b9;
 	color: white;
@@ -46,7 +45,7 @@ ul{
 	padding: 0;
 }
 
-li {
+#container li {
 	background-color: white;
 	height: 40px;
 	line-height: 40px;
@@ -54,7 +53,7 @@ li {
 	text-transform: capitalize;
 }
 
-li:nth-child(2n){
+#container li:nth-child(2n){
 	background-color: #f7f7f7;
 }
 
@@ -89,7 +88,9 @@ input:focus{
 .fade {
 	height: 0;
 }
-
+header {
+	top: 0;
+}
 header a {
 	color: white;
 }
@@ -97,5 +98,4 @@ header a {
 footer {
 	position: absolute;
 	bottom: 0;
-	background-color: inherit;
 }

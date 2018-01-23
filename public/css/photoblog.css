@@ -1,7 +1,17 @@
+.body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
 img {
 	width: 30%;
 	margin: 1.66%;
 	float: left;
+}
+div {
+	padding-top: 25px;
+	overflow: auto;
 }
 a {
     color: #232323;

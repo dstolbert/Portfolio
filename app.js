@@ -27,6 +27,11 @@ app.get("/todo", function(req, res) {
 });
 
 // Webpage Routes
+
+app.get("/mountain", function(req, res) {
+    res.render("mountain");    
+});
+
 app.get("/blog", function(req, res) {
    res.render("blog"); 
 });

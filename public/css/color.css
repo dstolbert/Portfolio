@@ -1,0 +1,91 @@
+body {
+	background: #232323;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+	margin:0;
+	padding: 0;
+	font-weight: 300;
+	font-size: 400%;
+}
+h2 {
+	max-width: 600px;
+	margin: 0 auto;
+	color: steelBlue;
+	text-align: center;
+	font-weight: 400;
+}
+h2 span{
+	margin-right: 5%;
+}
+#message {
+	color: black;
+	font-weight: 300;
+}
+#new {
+	margin-left: 0;
+	margin-right: 30px;
+}
+#easy {
+	margin-left: 30px;
+}
+#h1bar {
+	background:steelBlue;
+	color: white;
+	text-align: center;
+}
+#h2bar {
+	background:white;
+	margin: 0 auto;
+	color: black;
+	text-align: right;
+}
+#rgb {
+	text-transform: uppercase;
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.box {
+	background: #232323;
+	width: 30%;
+	margin: 1.66%;
+	padding-bottom: 30%;
+	float: left;
+	transition: 1.0s;
+	border-radius: 10%;
+}
+.selected {
+	background: steelBlue;
+	color: white;
+}
+button {
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	background: none;
+	height: 100%;
+	color: steelBlue;
+	letter-spacing: 1px;
+	transition: all 1.0s;
+	font-size: inherit;
+}
+button:hover {
+	background-color: steelBlue;
+	color: white;
+}
+
+/*Header*/
+
+header h2 {
+	max-width: none;
+	margin: 0;
+}
+
+header a {
+	margin: 0;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}

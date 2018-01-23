@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color</title>
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+<% include partials/header %>
+
+	<div id="h1bar">
+		<h1>The Great Color Game</h1>
+		<h1 id="rgb"></h1>
+	</div> 
+
+	<div id="h2bar">
+		<h2>
+			<button id="reset">New Colors</button>
+			<span id="message"> Good Luck!</span> 
+			<button id="easy">Easy</button> 
+			<button id="hard" class="selected">Hard</button>
+		</h2>
+	</div>
+	
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box bot"></div>
+		<div class="box bot"></div>
+		<div class="box bot"></div>
+	</div>
+
+<script type="text/javascript" src="js/color.js"></script>
+<% include partials/footer %>
+</body>
+</html>

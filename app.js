@@ -8,6 +8,16 @@ app.get("/", function(req, res){
     res.render("landing");
 });
 
+// Header Routes
+
+app.get("/about", function(req, res) {
+   res.render("about"); 
+});
+
+app.get("/contact", function(req, res) {
+    res.render("contact");    
+});
+
 // Random Projects Routes
 
 app.get("/rest", function(req, res) {
@@ -38,10 +48,6 @@ app.get("/blog", function(req, res) {
 
 app.get("/photoblog", function(req, res) {
    res.render("photoblog"); 
-});
-
-app.get("/contact", function(req, res) {
-    res.render("contact");    
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){

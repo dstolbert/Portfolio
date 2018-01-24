@@ -40,7 +40,6 @@ app.get("/photoblog", function(req, res) {
    res.render("photoblog"); 
 });
 
-
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server on!");
 });

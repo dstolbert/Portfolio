@@ -5,34 +5,63 @@ ul {
 	list-style: none;
 }
 .body {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 100%;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 /*Sections*/
 
 section {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	min-height: 100vh;
 	width: 100vw;
 	padding: 100px 80px;
 }
 .content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-left: 5vw;
 	font-size: 30px;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	opacity: 0;
 }
 
 section .fadeIn {
 	margin-top: 200px;
-	animation: 0.6s fadeIn 0s ease-in forwards;
+	-webkit-animation: 0.6s fadeIn 0s ease-in forwards;
+	        animation: 0.6s fadeIn 0s ease-in forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	100% {
+		margin-top: inherit;
+		opacity: 1;
+	}
 }
 
 @keyframes fadeIn {
@@ -48,7 +77,13 @@ section:not(.main):nth-child(even) {
 
 @media (max-width: 800px){
 	section {
-		padding: 50px 20px;
+		padding: 0;
+	}
+	section h2 {
+		font-size: 36px;
+	}
+	section p {
+		font-size: 24px;
 	}
 }
 
@@ -60,7 +95,8 @@ section:not(.main):nth-child(even) {
 
 .main .content {
 	width: 50vw;
-	animation: 1s fadeIn 0.5s forwards;
+	-webkit-animation: 1s fadeIn 0.5s forwards;
+	        animation: 1s fadeIn 0.5s forwards;
 }
 
 .main .background-image {
@@ -75,13 +111,25 @@ section:not(.main):nth-child(even) {
 }
 
 #arrow {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100vw;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-bottom: 10px;
 	color: #f5f5f5;
 	opacity: 0;
-	animation: 1s fadeInArrow 0.5s forwards;
+	-webkit-animation: 1s fadeInArrow 0.5s forwards;
+	        animation: 1s fadeInArrow 0.5s forwards;
+}
+
+@-webkit-keyframes fadeInArrow {
+	100% {
+		margin-bottom: 20px;
+		opacity: 1;
+	}
 }
 
 @keyframes fadeInArrow {
@@ -93,13 +141,7 @@ section:not(.main):nth-child(even) {
 
 @media (max-width: 800px){
 	.main {
-		min-height: 600px;
-	}
-	.main h1 {
-		font-size: 48px;
-	}
-	.main h3 {
-		font-size: 24px;
+		max-height: 500px;
 	}
 }
 
@@ -113,13 +155,21 @@ section:not(.main):nth-child(even) {
     margin-bottom: 5px;
 }
 
-/*Projects Section*/
+@media (max-width: 800px) {
+	.skills .content{
+		/*justify-content: flex-start;*/
+		/*padding-top: 30%;*/
+	}	
+}
 
+/*Projects Section*/
 
 .grid {
 	margin-top: 10%;
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: 1fr 1fr; 
+	-ms-grid-columns: 1fr 1fr;
+	    grid-template-columns: 1fr 1fr; 
 	text-align: center;
 }
 
@@ -140,29 +190,32 @@ section:not(.main):nth-child(even) {
     margin-left: 0;
 }
 
-#randhr {
-    width: 50%;
-    margin-left: 25%;
-    height: 3px;
-    background-color: #ddd;
-    border: none;
-    margin-bottom: 5px
-}
-
-#webhr {
-	width: 30%;
-	margin-left: 35%;
-	height: 3px;
-    background-color: #ddd;
-    border: none;
-    margin-bottom: 5px
-}
-
 .projects a:hover {
 	color: #536976;
 	font-weight: bold;
 }
 
+@media (max-width: 800px){
+	.projects {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.grid {
+		-ms-grid-columns: 1fr;
+		    grid-template-columns: 1fr;
+	}
+	.grid-items {
+		margin-bottom: 30px;
+	}
+}
 footer {
 	background-color: #536976;
 }

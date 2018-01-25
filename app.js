@@ -10,6 +10,10 @@ app.get("/", function(req, res){
 
 // Header Routes
 
+app.get("/projects", function(req, res) {
+   res.render("projects"); 
+});
+
 app.get("/about", function(req, res) {
    res.render("about"); 
 });

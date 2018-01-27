@@ -98,14 +98,11 @@ section:not(.main):nth-child(even) {
 }
 
 #arrow {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 100vw;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	margin-bottom: 10px;
+	text-align: center;
 	color: #f5f5f5;
 	opacity: 0;
 	-webkit-animation: 1s fadeInArrow 0.5s forwards;

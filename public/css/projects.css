@@ -36,6 +36,16 @@ section {
     height: 50vh;
 }
 
+@media (max-width: 800px){
+    section {
+        margin: 5%;
+        width: 90%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
 #spaceship {
     cursor: pointer;
     color: #536976;
@@ -68,6 +78,10 @@ section {
 
 .project {
     cursor: pointer;
+}
+.project:hover {
+    color: #536976;
+    font-weight: bold;
 }
 
 h1 {

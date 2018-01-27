@@ -19,6 +19,10 @@ section {
 	width: 100vw;
 	padding: 100px 80px;
 }
+
+section p {
+	font-size: 25px;
+}
 .content {
 	display: -webkit-box;
 	display: -ms-flexbox;

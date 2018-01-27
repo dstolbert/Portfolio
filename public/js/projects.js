@@ -12,14 +12,22 @@ window.addEventListener("resize", function(){
 
 // Set the scrollability for the sidebar
 document.getElementById("spaceship").addEventListener("click", function(){
-    window.scroll(0,0);
+    window.scroll({
+        left: 0,
+        top: 0,
+        behavior: "smooth"
+        });
 });
 
 function scrollbar(){
     for(var i = 0; i <projects.length; i++){
         yLoc.push((i*vh)+vh+50);
         projects[i].addEventListener("click", function(){
-            window.scroll(0, yLoc[projects.indexOf(this)]);
+            window.scroll({
+                left: 0, 
+                top: yLoc[projects.indexOf(this)],
+                behavior: "smooth"
+            });
         });
     }
 }

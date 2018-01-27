@@ -5,64 +5,76 @@
 	<link rel="stylesheet" type="text/css" href="css/projects.css"></link>
 <% include partials/header %>
 
-<div class="content">
-    <ul class="sidebar">
-        <li><i class="fa fa-space-shuttle fa-2x" aria-hidden="true"></i></li>
-        <li>YelpCamp- Coming Soon</li>
-        <li>Mountain Travel Landing Page</li>
-        <li>Patatap</li>
-        <li>Color Game</li>
-        <li>To-Do List</li>
-        <li>RESTful Routes</li>
-        <li>Simple Photo Blog</li>
-        <li>Simple Blog</li>
-    </ul>
-    <section id="main">
-        <h1>Learn more about my projects below</h1>
-        <i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i>
-    </section>
-    <section id="yelpcamp">
-        <h2><a href="/">YelpCamp</a></h2>
-        <hr>
-        <p>YelpCamp is a CRUDable app that allows users to create and comment on campgrounds, similar to Yelp. The app is built using Node.js with Express and MongoDB. I am just adding the finishing touches before I add this project!</p>
-    </section>
-    <section id="mountain">
-        <h2><a href="/mountain">Mountain Travel Landing Page</a></h2>
-        <hr>
-        <p>This is a generic landing page for an imaginary mountain travel company. This one is straight HTML and CSS, no fancy js here!</p>
-    </section>    
-    <section id="patatap">
-        <h2><a href="/patatap">Patatap Clone</a></h2>
-        <hr>
-        <p>My personal favorite, this is a pseudo-recreation of the wonderfully addicting <a href="https://patatap.com"><em>Patatap App</em></a>. This was made using paper.js for the circles and howler.js for the sounds.</p>
-    </section>
-    <section id="colorgame">
-        <h2><a href="/color">The Great Color Game</a></h2>
-        <hr>
-        <p>This a game to test your RGB color knowledge. Guess the right color given only the RGB values and you have won! If you are having a difficult time, switch it to easy-mode (I won't tell anyone). HTML/CSS/JS</p>
-    </section>
-    <section id="todo">
-        <h2><a href="/todo">To-Do List</a></h2>
-        <hr>
-        <p>An in browser To-Do List. Click on a todo to mark it as complete. Click on the trash icon when you decide that todo wasn't so important anymore. The icon will show up when you hover to the left of the todo. HTML/CSS/JS</p>
-    </section>
-    <section id="rest">
-        <h2><a href="/rest">RESTful Routes</a></h2>
-        <hr>
-        <p>This is my cheatsheet when making RESTful applications using mongoose. Bootstrapped.</p>
-    </section>    
-    <section id="photoblog">
-        <h2><a href="/photoblog">Simple Photo Blog</a></h2>
-        <hr>
-        <p>This was one of the first "webpages" I made during my web development course. I thought this would be the pinnacle of myweb development capabilites at this point.</p>
-    </section>
-    <section id="blog">
-        <h2><a href="/blog">Simple Blog</a></h2>
-        <hr>
-        <p>Similar to the photo blog above, this was one of my first projects. It carries a hefty dose of nostalgia for me.</p>
-    </section>
-</div>
+    <div class="content">
+        
+        <ul class="sidebar">
+            <li><i id="spaceship" class="fa fa-space-shuttle fa-2x" aria-hidden="true"></i></li>
+            <li class="project">YelpCamp- Coming Soon</li>
+            <li class="project">Mountain Travel Landing Page</li>
+            <li class="project">Patatap</li>
+            <li class="project">Color Game</li>
+            <li class="project">To-Do List</li>
+            <li class="project">RESTful Routes</li>
+            <li class="project">Simple Photo Blog</li>
+            <li class="project">Simple Blog</li>
+        </ul>
+        
+        <section id="main">
+                <h1 id="title">Learn more about my projects below</h1>
+                <i id="arrow" class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i>
+        </section>
+        
+        <section id="yelpcamp">
+            <h2><a href="/">YelpCamp</a></h2>
+            <hr>
+            <p>YelpCamp is a CRUDable app that allows users to create and comment on campgrounds, similar to Yelp. The app is built using Node.js with Express and MongoDB. I am just adding the finishing touches before I add this project!</p>
+        </section>
+        
+        <section id="mountain">
+            <h2><a href="/mountain">Mountain Travel Landing Page</a></h2>
+            <hr>
+            <p>This is a generic landing page for an imaginary mountain travel company. This one is straight HTML and CSS, no fancy js here!</p>
+        </section>    
+        
+        <section id="patatap">
+            <h2><a href="/patatap">Patatap Clone</a></h2>
+            <hr>
+            <p>My personal favorite, this is a pseudo-recreation of the wonderfully addicting <em><a href="https://patatap.com">Patatap.com</a></em>. This was made using paper.js for the circles and howler.js for the sounds.</p>
+        </section>
+        
+        <section id="colorgame">
+            <h2><a href="/color">The Great Color Game</a></h2>
+            <hr>
+            <p>This a game to test your RGB color knowledge. Guess the right color given only the RGB values and you have won! If you are having a difficult time, switch it to easy-mode (I won't tell anyone). HTML/CSS/JS.</p>
+        </section>
+        
+        <section id="todo">
+            <h2><a href="/todo">To-Do List</a></h2>
+            <hr>
+            <p>A To-Do List. Click on a todo item to mark it as complete. Click on the trash icon when you decide that todo wasn't so important anymore. The trash icon will show up when you hover to the left of the todo. HTML/CSS/JS.</p>
+        </section>
+        
+        <section id="rest">
+            <h2><a href="/rest">RESTful Routes</a></h2>
+            <hr>
+            <p>This is my cheatsheet when making RESTful applications using mongoose. Bootstrapped.</p>
+        </section>    
+        
+        <section id="photoblog">
+            <h2><a href="/photoblog">Simple Photo Blog</a></h2>
+            <hr>
+            <p>This was one of the first "webpages" I made during my web development course. I thought this would be the pinnacle of my web development capabilites.</p>
+        </section>
+        
+        <section id="blog">
+            <h2><a href="/blog">Simple Blog</a></h2>
+            <hr>
+            <p>Similar to the photo blog above, this was one of my first projects. It carries a hefty dose of nostalgia for me.</p>
+        </section>
 
+    </div>
+    
 <% include partials/footer %>
+<script type="text/javascript" src="/js/projects.js"></script>
 </body>
 </html>

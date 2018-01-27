@@ -108,6 +108,7 @@ section:not(.main):nth-child(even) {
 	background-size: cover;
 	overflow: hidden;
 	z-index: -1;
+	opacity: 0.9;
 }
 
 #arrow {

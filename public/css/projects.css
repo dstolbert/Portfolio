@@ -12,14 +12,8 @@ section {
     align-items: center;
     height: 100vh;
     width: 70vw;
-    font-size: 30px;
     margin-left: 26vw;
-    position: relative;
-    z-index: -1;
     border-bottom: 1px solid #536976;
-}
-p {
-    font-size: 20px;
 }
 
 .content{
@@ -42,12 +36,60 @@ p {
     height: 50vh;
 }
 
-.sidebar i {
+#spaceship {
+    cursor: pointer;
     color: #536976;
+    opacity: 0;
+    margin-right: 50px;
+    animation: 1s flyIn 0s linear forwards;
 }
 
-/*Main*/
+@keyframes flyIn {
+    100% {
+        opacity: 1;
+        margin: inherit;
+    }
+}
 
-.main i {
-    margin: 50px;
+#title {
+    opacity: 0;
+    animation: 1s fadeIn 0s linear forwards;
+}
+#arrow {
+    opacity: 0;
+    animation: 1s fadeIn 0s ease-in forwards;
+}
+
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+}
+
+.project {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+section h2 > a {
+    font-size: 36px;
+}
+
+section p {
+    font-size: 20px;
+    width: 80%;
+    line-height: 30px;
+}
+section hr {
+    width: 35%;
+    background-color: #AC9689;
+    height: 3px;
+    border: none;
+    margin: 10px 0 20px;
+}
+#blog {
+    border: none;
 }

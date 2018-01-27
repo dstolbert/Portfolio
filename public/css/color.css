@@ -23,6 +23,10 @@ h2 span{
 	color: black;
 	font-weight: 300;
 }
+#reset {
+	margin-left: 0;
+	margin-right: 30px;
+}
 #new {
 	margin-left: 0;
 	margin-right: 30px;
@@ -34,6 +38,7 @@ h2 span{
 	background:steelBlue;
 	color: white;
 	text-align: center;
+	padding-top: 20px;
 }
 #h2bar {
 	background:white;

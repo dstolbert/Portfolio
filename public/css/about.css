@@ -107,6 +107,6 @@ section {
 
 @media (max-width: 800px){
 	section {
-		max-height: 500px;
+		padding: 20px;
 	}
 }

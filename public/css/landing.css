@@ -66,8 +66,14 @@ section:not(.main):nth-child(even) {
 }
 
 @media (max-width: 800px){
+	#arrow i{
+		color: #536976;
+	}
 	section {
-		padding: 0;
+		padding:20px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 	}
 	section h2 {
 		font-size: 36px;
